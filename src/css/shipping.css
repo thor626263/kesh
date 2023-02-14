@@ -1,0 +1,172 @@
+.shipping h2 {
+    margin-bottom: 30px;
+    font-size: 23px;
+    color: #382924;
+}
+
+.shipping section {
+    width: 650px;
+    max-width: 100%;
+    display: flex;
+    padding: 10px 20px;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+}
+
+.shipping section .row {
+    display: flex;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.shipping section .row:first-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.shipping section .row span {
+    color: rgba(56, 41, 36, .5);
+    margin-right: 40px;
+    font-size: 16px;
+    width: 60px;
+    white-space: nowrap;
+}
+
+.shipping section .row .email {
+    color: #382924;
+    font-size: 16px;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.shipping section .row .btn {
+    margin-left: auto;
+    color: #9C4727;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.shipping section .row .btn:hover {
+    font-weight: bold;
+}
+
+.shipping section.second .row span {
+    margin-left: 70px;
+    color: #382924;
+    font-size: 16px;
+}
+
+.radio-container {
+    display: block;
+    position: relative;
+    /* padding-left: 10px;
+    margin-bottom: 12px; */
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #9C4727;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked~.checkmark {
+    background-color: #9C4727;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-container .checkmark:after {
+    top: 4.5px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.shipping .overflow {
+    width: 140px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.shipping section .row .email.overflow:after {
+    content: '...';
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 16px;
+    z-index: 88;
+    background: #fff;
+    color: #000;
+}
+
+.shipping .btn-section {
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #9C4727;
+    max-width: 100%;
+}
+
+.shipping .btn-section button {
+    font-size: 16px;
+    padding: 10px 0;
+    width: 250px;
+    text-align: center;
+    background: #9C4727;
+    color: #FCCB85;
+    border: none;
+    cursor: pointer;
+    max-width: 50%;
+}
+
+.shipping .btn-section button:hover {
+    background: #bb6344;
+}
+
+.shipping .btn-section .back {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.shipping .btn-section .back span {
+    font-size: 16px;
+}
+
+.shipping .btn-section .back img {
+    width: 10px;
+    height: 15px;
+    margin-right: 10px;
+}

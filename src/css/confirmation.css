@@ -1,0 +1,113 @@
+.confirmation * {
+    color: #382924;
+    max-width: 100%;
+}
+
+.confirmation .top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px;
+    margin-bottom: 50px;
+}
+
+.confirmation .top span {
+    color: rgba(56, 41, 36, .5);
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.confirmation .top h2 {
+    font-size: 22px;
+}
+
+.confirmation .map {
+    margin-bottom: 20px;
+}
+
+.confirmation .map iframe {
+    width: 650px;
+    height: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.confirmation .order-conf {
+    width: 100%;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    max-width: calc(100% - 30px);
+}
+
+.confirmation .order-conf h3,
+.confirmation .order-updated h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.confirmation .order-conf span,
+.confirmation .order-updated span {
+    color: rgba(56, 41, 36, .5);
+    font-size: 16px;
+}
+
+.sec {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 50px;
+    width: 650px;
+    overflow-x: hidden;
+}
+
+.confirmation .order-info h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.confirmation .order-info main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.confirmation .order-info main section {
+    width: 50%;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.confirmation .order-info main section span,
+.confirmation .order-info main section p {
+    line-height: 22px;
+    font-size: 15px;
+}
+
+.confirmation .order-info main section span {
+    font-weight: bold;
+    margin: 10px 0;
+    letter-spacing: .5px;
+}
+
+.confirmation .order-info main section p {
+    color: rgba(56, 41, 36, .5);
+}
+
+.overflow {
+    width: 140px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.email.overflow:after {
+    content: '...';
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 16px;
+    z-index: 88;
+    background: #fff;
+    color: rgba(56, 41, 36, .5);
+}

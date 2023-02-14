@@ -1,0 +1,186 @@
+.my-account .cont {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.my-account .cont h1 {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.7);
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 15px;
+    font-size: 26px;
+    width: 900px;
+    max-width: 100%;
+}
+
+.my-account main {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.my-account main .ls {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-account main .ls h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.my-account main .ls table {
+    text-align: center;
+    max-width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.my-account main .ls table tbody tr {
+    border-bottom: 1px solid #000;
+    background: rgba(243, 243, 243, .2);
+}
+
+.my-account main .ls table tr th {
+    background: #9C4727;
+    color: #FCCB85;
+    padding: 10px;
+    letter-spacing: .5px;
+    font-weight: normal;
+}
+
+.my-account main .ls table tr td {
+    padding: 20px 10px;
+    font-size: 16px;
+    letter-spacing: .5px;
+    color: #333;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.my-account main .ls table tr td div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.my-account main .ls table tr td img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.my-account main .ls table tr td span {
+    font-size: 16px;
+    max-width: 70px;
+}
+
+.my-account main .rs {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-account main .rs h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.my-account main .rs section {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-account main .rs section * {
+    margin: 7px 0;
+    font-size: 16px;
+}
+
+.my-account main .rs section span {
+    letter-spacing: .5px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.my-account main .rs section .addresses {
+    padding: 7px;
+    font-size: 16px;
+    border: none;
+    background: #9C4727;
+    color: #FCCB85;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.my-account main .rs section .addresses:hover {
+    background: #bf6240;
+}
+
+.my-account main .rs section .logout {
+    padding: 7px;
+    font-size: 16px;
+    border: none;
+    background: #c0392b;
+    color: #f3f3f3;
+    margin-top: 20px;
+    cursor: pointer;
+    letter-spacing: .5px;
+}
+
+.addresses-sec {
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    padding: 20px;
+    max-width: calc(100% - 20px);
+    z-index: 99;
+    border-radius: 10px;
+    max-height: calc(100vh - 40px);
+    overflow-x: auto;
+}
+
+.addresses-sec h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.addresses-sec .sec {
+    margin: 10px 0;
+    letter-spacing: .5px;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 10px;
+    color: #444;
+    text-transform: capitalize;
+    line-height: 26px;
+}
+
+@media (max-width: 950px) {
+    .my-account main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .my-account main .ls {
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,264 @@
+.blog {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    padding: 0 10px;
+}
+
+.blog * {
+    color: #382924;
+    text-decoration: none;
+}
+
+.blog-section h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Noto Serif';
+    font-size: 26px;
+    width: 100%;
+}
+
+.blog .blog-posts {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    align-items: center;
+    max-width: 100%;
+}
+
+.blog .blog-posts .blog-post {
+    width: 100%;
+    max-width: 100%;
+    margin: 30px 0;
+}
+
+.blog .blog-posts .blog-post img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.blog .blog-posts .blog-post h2 {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.blog .blog-posts .blog-post ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.blog .blog-posts .blog-post ul li {
+    font-size: 16px;
+    color: #9C4727;
+    margin: 5px 0;
+}
+
+.blog .blog-posts .blog-post p {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 15px;
+}
+
+.blog .blog-posts .blog-post a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.blog .blog-posts .blog-post a:hover {
+    font-weight: bold;
+}
+
+.blog .post-view .content ul {
+    margin: 10px 0;
+    color: #000;
+    padding-left: 15px;
+    display: block;
+}
+
+.blog .post-view .content ul li {
+    color: #382924;
+    line-height: 25px;
+}
+
+.recent-posts {
+    width: 200px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.recent-post {
+    width: 100%;
+}
+
+.recent-post img {
+    width: 100%;
+}
+
+.recent-posts h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.recent-post {
+    margin: 10px 0;
+}
+
+.post-view {
+    width: 800px;
+    max-width: 100%;
+}
+
+.post-view .content {
+    width: 100% !important;
+}
+
+.post-view h1 {
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.post-view ul {
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.post-view ul li {
+    font-size: 16px;
+    color: #9C4727;
+}
+
+.post-view ul li:first-child {
+    margin-right: 30px;
+}
+
+.post-view img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.post-view h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.post-view p {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 15px 0;
+}
+
+.comment {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.comment input,
+.comment textarea {
+    color: #382924;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    padding: 10px 0;
+    padding-left: 10px;
+    outline: none;
+    width: 100%;
+}
+
+.comment input:focus,
+.comment textarea:focus {
+    border: 1px solid #9C4727;
+}
+
+.comment input::placeholder,
+.comment textarea::placeholder {
+    color: #382924;
+}
+
+.comment section {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.comment section .row {
+    max-width: 100%;
+    width: 393px;
+}
+
+.comment section .row:first-child {
+    margin-right: 15px;
+}
+
+.comment section input {
+    width: 500px;
+    max-width: 100%;
+}
+
+.comment textarea {
+    height: 100px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.comment button {
+    font-size: 16px;
+    padding: 10px 0;
+    text-align: center;
+    width: 250px;
+    border: none;
+    outline: none;
+    margin-left: auto;
+    background: #9C4727;
+    color: #FCCB85;
+    cursor: pointer;
+}
+
+.comment button:hover {
+    background: #ae5b3d;
+}
+
+@media (max-width: 920px) {
+    .blog {
+        flex-direction: column;
+    }
+
+    .recent-posts {
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .recent-posts .recent-post {
+        width: 300px;
+        max-width: 100%;
+    }
+}
+
+.recent-posts .recent-post:hover {
+    font-weight: bold;
+}
+
+.comment .err {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #d63031;
+}
+
+.comment .err.last {
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 500px) {
+    .comment section {
+        flex-direction: column;
+    }
+
+    .comment section .row {
+        margin: 10px 0;
+    }
+}

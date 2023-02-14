@@ -1,0 +1,197 @@
+.shipping-layout {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+}
+
+.shipping-layout .ls {
+    width: calc(100% - 600px);
+    min-height: 100%;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: calc(100% - 1350px);
+    max-width: 100%;
+}
+
+.shipping-layout .rs {
+    width: 600px;
+    /* height: 100%; */
+    background: rgba(254, 234, 206, .5);
+    max-width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    /* min-height: 100vh; */
+}
+
+.shipping-layout .rs main {
+    width: 400px;
+    max-width: 100%;
+}
+
+.shipping-layout .rs .product {
+    display: flex;
+    /* padding: 10px 0; */
+    width: 100%;
+    margin: 0;
+    margin-top: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 20px;
+}
+
+.shipping-layout .rs .product img {
+    width: 100px;
+    height: 100px;
+}
+
+.shipping-layout .rs .product section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.shipping-layout .rs .product section div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.shipping-layout .rs .product section div span:first-child {
+    margin-bottom: 10px;
+}
+
+.shipping-layout .rs .product section div span {
+    font-family: 'Noto Serif';
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+
+.shipping-layout .rs .product section .price {
+    margin-left: auto;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: .5px;
+}
+
+.shipping-layout .rs .discount-code {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 20px;
+}
+
+.shipping-layout .rs .discount-code input {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid rgba(56, 41, 36, .5);
+    background: transparent;
+    width: calc(100% - 80px);
+    margin-right: 20px;
+    outline: none;
+}
+
+.shipping-layout .rs .discount-code input:focus {
+    border: 1px solid rgba(156, 71, 39, 1);
+}
+
+.shipping-layout .rs .discount-code input::placeholder {
+    color: rgba(56, 41, 36, .5);
+}
+
+.shipping-layout .rs .discount-code button {
+    padding: 10px;
+    background: transparent;
+    border: 2px solid rgba(156, 71, 39, .5);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: .5px;
+}
+
+.shipping-layout .rs .discount-code button:hover {
+    color: #fff;
+    background: rgba(156, 71, 39, 1);
+}
+
+.shipping-layout .rs .row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 20px;
+}
+
+.shipping-layout .rs .row .col {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #382924;
+
+}
+
+.shipping-layout .rs .row.second {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: none;
+    align-items: center;
+}
+
+.shipping-layout .rs .row.second section {
+    display: flex;
+    flex-direction: column;
+}
+
+.shipping-layout .rs .row.second span {
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: .5px;
+}
+
+.shipping-layout .rs .row.second section span {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: normal;
+}
+
+@media (max-width: 1325px) {
+    .shipping-layout {
+        /* flex-direction: column; */
+        /* align-items: center; */
+        justify-content: space-between;
+    }
+
+    .shipping-layout .ls {
+        height: auto;
+        min-height: auto;
+        margin-bottom: 20px;
+        /* padding-left: 0; */
+        padding: 30px 10px;
+        width: 600px;
+    }
+
+    .shipping-layout .rs {
+        padding: 20px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 1005px) {
+    .shipping-layout .ls {
+        width: 500px;
+    }
+}
+
+@media (max-width: 905px) {
+    .shipping-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+}
